@@ -46,6 +46,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - p1
+    - BiGUL
 
 tests:
   p1-test:

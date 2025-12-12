@@ -17,8 +17,9 @@
 #
 # snapshot: ./custom-snapshot.yaml
 # snapshot: https://example.com/snapshots/2024-01-01.yaml
-snapshot:
-  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/24/23.yaml
+# snapshot:
+#   url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/24/23.yaml
+snapshot: lts-8.24
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -35,7 +36,11 @@ packages:
 # These entries can reference officially published versions as well as
 # forks / in-progress versions pinned to a git hash. For example:
 #
-# extra-deps:
+extra-deps:
+- BiGUL-1.0.1@sha256:a0955145232fc7574c7d181d6f03a25308b8a0825ebf48e395b404cfd918454e,2933
+- Cabal-2.4.1.0
+- parsec-3.1.13.0
+- text-1.2.5.0
 # - acme-missiles-0.3
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
